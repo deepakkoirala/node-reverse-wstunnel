@@ -36,9 +36,9 @@ client.start(localport,'ws://websocketserverhost:port', remotehost:port);
 ```JavaScript   
 var wts = require("node-reverse-wstunnel");
 
-reverse_server = new wts.server_reverse(); 
+reverse_server = new wts.server_reverse(80); 
 //the port of the websocket server 
-reverse_server.start(port);
+reverse_server.start();
 ``` 
 ###Reverse Client example
 ```JavaScript   
